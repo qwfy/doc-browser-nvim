@@ -1,0 +1,26 @@
+:toc: macro
+:experimental:
+
+Neovim plugin for link:https://github.com/qwfy/doc-browser[Doc Browser].
+
+toc::[]
+
+== Installation
+
+If you are using vim-plug:
+
+....
+Plug 'qwfy/doc-browser-nvim', { 'do': ':UpdateRemotePlugins' }
+....
+
+If you are using other plugin managers, don't forget to execute `:UpdateRemotePlugins` after installing this plugin.
+
+
+== Usage
+
+
+Use `<leader>b` to summon `doc-browser`. An instance of `doc-browser` should be running before the call.
+
+`let g:docbrowser_map = 0` in your vimrc if you don't like the default binding.
+
+Use function `DocbrowserSummon(<your search string here>)` to search arbitrary string.
