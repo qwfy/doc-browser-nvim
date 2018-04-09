@@ -21,7 +21,8 @@ class Docbrowser():
     @neovim.function('DocbrowserSummon', range=False, sync=False)
     def summon(self, args):
         [query] = args
-        conn = http.client.HTTPConnection('localhost:7701')
+        conn = http.client.HTTPConnection('localhost', 7701)
         conn.request("GET", f'/summon?q={query}')
         resp = conn.getresponse()
+        conn.close()
         return resp.status
