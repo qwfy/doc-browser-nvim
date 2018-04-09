@@ -21,6 +21,8 @@ If you are using other plugin managers, don't forget to execute `:UpdateRemotePl
 
 Use `<leader>b` to summon `doc-browser`. An instance of `doc-browser` should be running before the call.
 
+`<leader>h` is like `<leader>b`, but it searches Hoogle.
+
 `let g:docbrowser_map = 0` in your vimrc if you don't like the default binding.
 
 Use function `DocbrowserSummon(<your search string here>)` to search arbitrary string.

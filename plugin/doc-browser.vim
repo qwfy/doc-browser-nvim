@@ -24,4 +24,7 @@ endif
 if g:docbrowser_map == 1
     nnoremap <leader>b :call DocbrowserSummon(expand("<cword>"))<CR>
     xnoremap <leader>b :call DocbrowserSummon(_GetVisSelection())<CR>
+
+    nnoremap <leader>h :call DocbrowserSummon("/hh" . expand("<cword>"))<CR>
+    xnoremap <leader>h :call DocbrowserSummon("/hh" . _GetVisSelection())<CR>
 endif
